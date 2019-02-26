@@ -1,0 +1,29 @@
+Tester:     weka.experiment.PairedCorrectedTTester
+Analysing:  Percent_incorrect
+Datasets:   1
+Resultsets: 11
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       9/18/15 8:43 PM
+
+
+Dataset                   (1) meta.Fil | (2) meta. (3) meta. (4) meta. (5) meta. (6) meta. (7) meta. (8) meta. (9) meta. (10) meta (11) meta
+--------------------------------------------------------------------------------------------------------------------------------------------
+cmc_labels               (100)   57.08 |   51.84 *   50.75 *   50.97 *   51.13 *   51.72 *   52.24 *   52.15 *   51.89 *   52.33 *   52.57 *
+--------------------------------------------------------------------------------------------------------------------------------------------
+                               (v/ /*) |   (0/0/1)   (0/0/1)   (0/0/1)   (0/0/1)   (0/0/1)   (0/0/1)   (0/0/1)   (0/0/1)   (0/0/1)   (0/0/1)
+
+
+Key:
+(1) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(2) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 10 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(3) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 20 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(4) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 30 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(5) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 40 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(6) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 50 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(7) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 60 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(8) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 70 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(9) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 80 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(10) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 90 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(11) meta.FilteredClassifier '-F \"supervised.attribute.AddClassification -W \\\"rules.ZeroR \\\"\" -W lazy.IBk -- -K 100 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+

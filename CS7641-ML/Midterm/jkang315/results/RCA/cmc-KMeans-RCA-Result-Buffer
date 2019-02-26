@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     cmc-RCA
+Instances:    1473
+Attributes:   10
+              K1
+              K2
+              K3
+              K4
+              K5
+              K6
+              K7
+              K8
+              K9
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 15
+Within cluster sum of squared errors: 558.6063320024323
+
+Initial starting points (random):
+
+Cluster 0: 20.78461,5.196152,-1.732051,5.196152,5.196152,10.392305,8.660254,-10.392305,-8.660254,0
+Cluster 1: 17.320508,5.196152,-1.732051,1.732051,6.928203,6.928203,5.196152,-5.196152,-5.196152,0
+Cluster 2: 17.320508,5.196152,-1.732051,5.196152,5.196152,5.196152,8.660254,-10.392305,-5.196152,0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                           Cluster#
+Attribute      Full Data          0          1          2
+                (1473.0)    (503.0)    (480.0)    (490.0)
+=========================================================
+K1               17.0171     17.293     15.888    17.8401
+K2                5.3043     5.7643      6.174     3.9802
+K3               -1.4734    -1.6942    -1.6924    -1.0322
+K4                5.1244     5.0274     3.6481     6.6702
+K5                4.4883     4.7933     5.1673     3.5101
+K6                5.6489     6.0983     6.0261     4.8179
+K7                9.6433      9.862     9.3134     9.7419
+K8              -11.0649   -10.9088    -8.7505   -13.4923
+K9               -4.3507    -4.7175    -4.7271    -3.6055
+ClassValues       0.9199     1.9006     0.0938     0.7224
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       503 ( 34%)
+1       480 ( 33%)
+2       490 ( 33%)
+

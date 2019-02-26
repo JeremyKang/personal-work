@@ -1,0 +1,29 @@
+Tester:     weka.experiment.PairedCorrectedTTester
+Analysing:  Percent_incorrect
+Datasets:   1
+Resultsets: 11
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       9/19/15 11:01 PM
+
+
+Dataset                   (1) meta.Fil | (2) meta. (3) meta. (4) meta. (5) meta. (6) meta. (7) meta. (8) meta. (9) meta. (10) meta (11) met
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmc_labels_discretized-we(100)   48.59 |   48.77     48.79     49.26     49.76     49.95     50.44     51.01     52.24 v   54.53 v   0.00 *
+-------------------------------------------------------------------------------------------------------------------------------------------
+                               (v/ /*) |   (0/1/0)   (0/1/0)   (0/1/0)   (0/1/0)   (0/1/0)   (0/1/0)   (0/1/0)   (1/0/0)   (1/0/0)  (0/0/1)
+
+
+Key:
+(1) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 0.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(2) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 10.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(3) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 20.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(4) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 30.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(5) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 40.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(6) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 50.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(7) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 60.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(8) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 70.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(9) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 80.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(10) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 90.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(11) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 100.0\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+

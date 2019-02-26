@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     cmc-PCA
+Instances:    1473
+Attributes:   9
+              -0.522wife_ed-0.496husband_ed-0.399sol_index+0.359husband_occ+0.326media_expo+0.234wife_religion+0.168num_child+0.066employment-0.002wife_age
+              -0.687wife_age-0.61num_child+0.254husband_occ-0.216sol_index-0.153media_expo+0.124wife_religion+0.059husband_ed+0.048wife_ed-0.01employment
+              -0.806employment-0.466wife_religion+0.205media_expo-0.191num_child+0.158husband_occ-0.136husband_ed+0.077wife_age+0.057sol_index-0.05wife_ed
+              -0.779wife_religion+0.546employment+0.248husband_occ+0.151media_expo-0.073num_child-0.071sol_index+0.022husband_ed-0.004wife_ed-0.001wife_age
+              0.76 media_expo-0.513husband_occ-0.256sol_index-0.198num_child+0.161husband_ed+0.135wife_ed-0.069wife_age+0.061wife_religion+0.045employment
+              0.835sol_index+0.336media_expo-0.237wife_ed-0.234num_child+0.158wife_religion+0.156employment+0.122husband_occ-0.095husband_ed-0.082wife_age
+              0.627husband_occ+0.553husband_ed+0.316media_expo+0.281num_child+0.281wife_ed+0.191wife_religion-0.084employment+0.02 wife_age-0.016sol_index
+              0.641wife_age-0.566num_child+0.328husband_ed-0.308wife_ed-0.154sol_index+0.134wife_religion-0.105media_expo+0.098husband_occ+0.064employment
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 3
+Number of iterations performed: 7
+
+
+                                                                                                                                                Cluster
+Attribute                                                                                                                                             0       1       2
+                                                                                                                                                 (0.23)  (0.35)  (0.42)
+========================================================================================================================================================================
+-0.522wife_ed-0.496husband_ed-0.399sol_index+0.359husband_occ+0.326media_expo+0.234wife_religion+0.168num_child+0.066employment-0.002wife_age
+  mean                                                                                                                                            0.4395 -1.5045  1.0268
+  std. dev.                                                                                                                                       1.0807  0.5561  1.4352
+
+-0.687wife_age-0.61num_child+0.254husband_occ-0.216sol_index-0.153media_expo+0.124wife_religion+0.059husband_ed+0.048wife_ed-0.01employment
+  mean                                                                                                                                            0.5118  -0.301 -0.0298
+  std. dev.                                                                                                                                       1.0604  1.0717  1.4789
+
+-0.806employment-0.466wife_religion+0.205media_expo-0.191num_child+0.158husband_occ-0.136husband_ed+0.077wife_age+0.057sol_index-0.05wife_ed
+  mean                                                                                                                                           -0.4254     0.2  0.0672
+  std. dev.                                                                                                                                       0.7001  1.1347  1.0284
+
+-0.779wife_religion+0.546employment+0.248husband_occ+0.151media_expo-0.073num_child-0.071sol_index+0.022husband_ed-0.004wife_ed-0.001wife_age
+  mean                                                                                                                                            -0.078  0.0889 -0.0318
+  std. dev.                                                                                                                                       0.5077  1.3099  0.7529
+
+0.76 media_expo-0.513husband_occ-0.256sol_index-0.198num_child+0.161husband_ed+0.135wife_ed-0.069wife_age+0.061wife_religion+0.045employment
+  mean                                                                                                                                            -0.341  0.2016   0.019
+  std. dev.                                                                                                                                       0.6227  0.5047  1.2253
+
+0.835sol_index+0.336media_expo-0.237wife_ed-0.234num_child+0.158wife_religion+0.156employment+0.122husband_occ-0.095husband_ed-0.082wife_age
+  mean                                                                                                                                           -0.0272 -0.0081   0.022
+  std. dev.                                                                                                                                       0.8206  0.4742  0.9904
+
+0.627husband_occ+0.553husband_ed+0.316media_expo+0.281num_child+0.281wife_ed+0.191wife_religion-0.084employment+0.02 wife_age-0.016sol_index
+  mean                                                                                                                                             0.155 -0.1564  0.0461
+  std. dev.                                                                                                                                       0.7776  0.4699   0.935
+
+0.641wife_age-0.566num_child+0.328husband_ed-0.308wife_ed-0.154sol_index+0.134wife_religion-0.105media_expo+0.098husband_occ+0.064employment
+  mean                                                                                                                                           -0.1183 -0.0599  0.1163
+  std. dev.                                                                                                                                       0.4978  0.4746  0.7655
+
+ClassValues
+  mean                                                                                                                                             1.998  0.9445  0.3006
+  std. dev.                                                                                                                                       0.0447  0.7709  0.5563
+
+
+
+Time taken to build model (full training data) : 3.83 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       370 ( 25%)
+1       490 ( 33%)
+2       613 ( 42%)
+
+
+Log likelihood: -11.01353
+

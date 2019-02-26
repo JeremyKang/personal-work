@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     car-PCA
+Instances:    1728
+Attributes:   7
+              0.984buying-0.164maint+0.071doors+0.009lug_boot+0.001persons+-0safety
+              -0.982maint-0.17buying+0.083doors+0.006lug_boot-0.002persons+0    safety
+              0.994doors+0.094maint-0.056buying+0.008lug_boot+0.002persons+-0safety
+              -0.983lug_boot-0.184persons+0.009doors+0.008buying-0.006maint+0    safety
+              1    safety+0    persons+0    doors+0    maint+0    lug_boot+0    buying
+              -0.983persons+0.184lug_boot+0.003maint-0buying+0    doors+0    safety
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 31
+Within cluster sum of squared errors: 863.8144466153715
+
+Initial starting points (random):
+
+Cluster 0: 1.499308,0.329897,1.225916,-1.177843,0,0.223588,1
+Cluster 1: 0.322383,-0.556798,-0.439596,1.425285,0,0.979428,0
+Cluster 2: -0.263872,1.351107,-0.557244,1.429306,1.22439,0.973877,0
+Cluster 3: -0.333707,0.549523,0.429807,-0.221924,0,-1.204767,1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                         Cluster#
+Attribute                                                                    Full Data          0          1          2          3
+                                                                              (1728.0)    (468.0)    (411.0)    (378.0)    (471.0)
+==================================================================================================================================
+0.984buying-0.164maint+0.071doors+0.009lug_boot+0.001persons+-0safety               -0     0.2618     0.0194    -0.1569    -0.1511
+-0.982maint-0.17buying+0.083doors+0.006lug_boot-0.002persons+0    safety             0    -0.3002    -0.0108     0.1896     0.1556
+0.994doors+0.094maint-0.056buying+0.008lug_boot+0.002persons+-0safety               -0     0.1553     0.0444     -0.093    -0.1184
+-0.983lug_boot-0.184persons+0.009doors+0.008buying-0.006maint+0    safety           -0     -0.505    -0.2368     0.5395     0.2754
+1    safety+0    persons+0    doors+0    maint+0    lug_boot+0    buying            -0     0.6985    -0.8222     1.0009    -0.7799
+-0.983persons+0.184lug_boot+0.003maint-0buying+0    doors+0    safety               -0    -0.6176     0.9992     0.6694    -0.7954
+ClassValues                                                                     0.4149     1.3782          0     0.1429     0.0382
+
+
+
+
+Time taken to build model (full training data) : 0.04 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       468 ( 27%)
+1       411 ( 24%)
+2       378 ( 22%)
+3       471 ( 27%)
+

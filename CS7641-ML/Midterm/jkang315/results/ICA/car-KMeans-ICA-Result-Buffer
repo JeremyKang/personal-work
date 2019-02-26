@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     car-ICA
+Instances:    1728
+Attributes:   7
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 20
+Within cluster sum of squared errors: 327.0758951701447
+
+Initial starting points (random):
+
+Cluster 0: -0.019966,-0.024198,-0.001074,-0.03985,0.00978,0.021016,1
+Cluster 1: -0.011694,0.020492,0.015232,0.003124,-0.049089,0.005906,0
+Cluster 2: -0.021254,0.041199,0.027386,0.025975,-0.050529,0.072237,0
+Cluster 3: -0.010504,0.020166,-0.006314,0.002834,0.02473,0.017384,1
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                           Cluster#
+Attribute      Full Data          0          1          2          3
+                (1728.0)    (453.0)    (345.0)    (527.0)    (403.0)
+====================================================================
+Source_0         -0.0055    -0.0064    -0.0026    -0.0156     0.0064
+Source_1          0.0113     0.0204    -0.0104     0.0244     0.0025
+Source_2         -0.0034    -0.0116     0.0079    -0.0041    -0.0028
+Source_3         -0.0015    -0.0193    -0.0145     0.0199     0.0018
+Source_4         -0.0087    -0.0022    -0.0255    -0.0251     0.0197
+Source_5          0.0159     0.0187     0.0076      0.039    -0.0102
+ClassValues       0.4149     1.4393          0     0.1233          0
+
+
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       453 ( 26%)
+1       345 ( 20%)
+2       527 ( 30%)
+3       403 ( 23%)
+

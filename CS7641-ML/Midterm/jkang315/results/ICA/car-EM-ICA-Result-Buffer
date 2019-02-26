@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     car-ICA
+Instances:    1728
+Attributes:   7
+              Source_0
+              Source_1
+              Source_2
+              Source_3
+              Source_4
+              Source_5
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 2
+Number of iterations performed: 3
+
+
+              Cluster
+Attribute           0       1
+               (0.57)  (0.43)
+==============================
+Source_0
+  mean         -0.0064 -0.0042
+  std. dev.     0.0247  0.0248
+
+Source_1
+  mean          0.0096  0.0136
+  std. dev.     0.0245  0.0262
+
+Source_2
+  mean          0.0001  -0.008
+  std. dev.     0.0225  0.0239
+
+Source_3
+  mean          0.0097 -0.0166
+  std. dev.     0.0199  0.0185
+
+Source_4
+  mean         -0.0143 -0.0012
+  std. dev.     0.0295  0.0226
+
+Source_5
+  mean          0.0199  0.0107
+  std. dev.     0.0328  0.0288
+
+ClassValues
+  mean          0.0003  0.9743
+  std. dev.     0.0184  0.8619
+
+
+
+Time taken to build model (full training data) : 2.77 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1210 ( 70%)
+1       518 ( 30%)
+
+
+Log likelihood: 14.67844
+

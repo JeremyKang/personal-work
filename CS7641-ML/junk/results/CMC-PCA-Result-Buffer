@@ -1,0 +1,75 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.PrincipalComponents -R 0.95 -A 9
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     cmc-full
+Instances:    1473
+Attributes:   10
+              wife_age
+              wife_ed
+              husband_ed
+              num_child
+              wife_religion
+              employment
+              husband_occ
+              sol_index
+              media_expo
+              ClassValues
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (unsupervised):
+	Principal Components Attribute Transformer
+
+Correlation matrix
+  1     -0.05  -0.05   0.54  -0.14  -0.04  -0.2    0.18   0.11 
+ -0.05   1      0.62  -0.19  -0.23  -0.06  -0.4    0.36  -0.34 
+ -0.05   0.62   1     -0.19  -0.18   0     -0.34   0.36  -0.29 
+  0.54  -0.19  -0.19   1      0.07   0.1   -0.02  -0.01   0.13 
+ -0.14  -0.23  -0.18   0.07   1      0.07   0.08  -0.2    0.06 
+ -0.04  -0.06   0      0.1    0.07   1      0.01  -0.08   0    
+ -0.2   -0.4   -0.34  -0.02   0.08   0.01   1     -0.29   0.11 
+  0.18   0.36   0.36  -0.01  -0.2   -0.08  -0.29   1     -0.25 
+  0.11  -0.34  -0.29   0.13   0.06   0      0.11  -0.25   1    
+
+
+eigenvalue	proportion	cumulative
+  2.51978	  0.27998	  0.27998	-0.522wife_ed-0.496husband_ed-0.399sol_index+0.359husband_occ+0.326media_expo+0.234wife_religion+0.168num_child+0.066employment-0.002wife_age
+  1.66975	  0.18553	  0.4655 	-0.687wife_age-0.61num_child+0.254husband_occ-0.216sol_index-0.153media_expo+0.124wife_religion+0.059husband_ed+0.048wife_ed-0.01employment
+  1.06577	  0.11842	  0.58392	-0.806employment-0.466wife_religion+0.205media_expo-0.191num_child+0.158husband_occ-0.136husband_ed+0.077wife_age+0.057sol_index-0.05wife_ed
+  0.90496	  0.10055	  0.68447	-0.779wife_religion+0.546employment+0.248husband_occ+0.151media_expo-0.073num_child-0.071sol_index+0.022husband_ed-0.004wife_ed-0.001wife_age
+  0.84695	  0.09411	  0.77858	0.76 media_expo-0.513husband_occ-0.256sol_index-0.198num_child+0.161husband_ed+0.135wife_ed-0.069wife_age+0.061wife_religion+0.045employment
+  0.64445	  0.07161	  0.85018	0.835sol_index+0.336media_expo-0.237wife_ed-0.234num_child+0.158wife_religion+0.156employment+0.122husband_occ-0.095husband_ed-0.082wife_age
+  0.59734	  0.06637	  0.91655	0.627husband_occ+0.553husband_ed+0.316media_expo+0.281num_child+0.281wife_ed+0.191wife_religion-0.084employment+0.02 wife_age-0.016sol_index
+  0.39119	  0.04347	  0.96002	0.641wife_age-0.566num_child+0.328husband_ed-0.308wife_ed-0.154sol_index+0.134wife_religion-0.105media_expo+0.098husband_occ+0.064employment
+
+Eigenvectors
+ V1	 V2	 V3	 V4	 V5	 V6	 V7	 V8	
+-0.0018	-0.6873	 0.077 	-0.0005	-0.0687	-0.0825	 0.0203	 0.6406	wife_age
+-0.5221	 0.0483	-0.0498	-0.0045	 0.1349	-0.2367	 0.2806	-0.3076	wife_ed
+-0.4958	 0.0594	-0.1363	 0.0217	 0.1607	-0.0951	 0.5528	 0.3281	husband_ed
+ 0.1676	-0.6099	-0.1913	-0.0732	-0.1981	-0.2336	 0.2813	-0.5665	num_child
+ 0.234 	 0.1238	-0.4659	-0.7787	 0.0605	 0.1575	 0.1907	 0.1337	wife_religion
+ 0.0664	-0.0096	-0.8057	 0.5463	 0.0446	 0.1556	-0.0839	 0.0638	employment
+ 0.3588	 0.2543	 0.1581	 0.2482	-0.5132	 0.1225	 0.6266	 0.0984	husband_occ
+-0.3986	-0.2155	 0.0567	-0.0713	-0.2564	 0.8345	-0.0163	-0.1544	sol_index
+ 0.3265	-0.1526	 0.2051	 0.1506	 0.7598	 0.3364	 0.3159	-0.1046	media_expo
+
+Ranked attributes:
+ 0.72     1 -0.522wife_ed-0.496husband_ed-0.399sol_index+0.359husband_occ+0.326media_expo+0.234wife_religion+0.168num_child+0.066employment-0.002wife_age
+ 0.5345   2 -0.687wife_age-0.61num_child+0.254husband_occ-0.216sol_index-0.153media_expo+0.124wife_religion+0.059husband_ed+0.048wife_ed-0.01employment
+ 0.4161   3 -0.806employment-0.466wife_religion+0.205media_expo-0.191num_child+0.158husband_occ-0.136husband_ed+0.077wife_age+0.057sol_index-0.05wife_ed
+ 0.3155   4 -0.779wife_religion+0.546employment+0.248husband_occ+0.151media_expo-0.073num_child-0.071sol_index+0.022husband_ed-0.004wife_ed-0.001wife_age
+ 0.2214   5 0.76 media_expo-0.513husband_occ-0.256sol_index-0.198num_child+0.161husband_ed+0.135wife_ed-0.069wife_age+0.061wife_religion+0.045employment
+ 0.1498   6 0.835sol_index+0.336media_expo-0.237wife_ed-0.234num_child+0.158wife_religion+0.156employment+0.122husband_occ-0.095husband_ed-0.082wife_age
+ 0.0834   7 0.627husband_occ+0.553husband_ed+0.316media_expo+0.281num_child+0.281wife_ed+0.191wife_religion-0.084employment+0.02 wife_age-0.016sol_index
+ 0.04     8 0.641wife_age-0.566num_child+0.328husband_ed-0.308wife_ed-0.154sol_index+0.134wife_religion-0.105media_expo+0.098husband_occ+0.064employment
+
+Selected attributes: 1,2,3,4,5,6,7,8 : 8
+

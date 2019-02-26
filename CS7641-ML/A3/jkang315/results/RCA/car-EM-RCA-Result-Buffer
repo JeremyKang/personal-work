@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     car-RCA
+Instances:    1728
+Attributes:   7
+              K1
+              K2
+              K3
+              K4
+              K5
+              K6
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 5
+Number of iterations performed: 1
+
+
+              Cluster
+Attribute           0       1       2       3       4
+               (0.22)  (0.18)  (0.15)  (0.25)   (0.2)
+======================================================
+K1
+  mean          4.0368  2.6698  2.3128  5.5988  6.0324
+  std. dev.     1.8123  1.9378  1.8378  2.0421  1.8921
+
+K2
+  mean          1.5443   4.162  0.7449   4.549  1.2436
+  std. dev.      1.393  1.0568  0.8686  0.8433    1.25
+
+K3
+  mean          5.4575  8.6167  4.4566    9.43  5.6861
+  std. dev.     2.3765  2.5236  2.4127  2.2191   2.479
+
+K4
+  mean          -1.762      -0 -0.2583 -2.6358 -3.1959
+  std. dev.     0.9279  0.0003  0.6227  0.8652  0.6327
+
+K5
+  mean           1.762       0  0.2583  2.6358  3.1959
+  std. dev.     0.9279  0.0003  0.6227  0.8652  0.6327
+
+K6
+  mean               0       0       0       0       0
+  std. dev.          0       0       0       0       0
+
+ClassValues
+  mean          0.3027       0  0.0361  1.1184    0.29
+  std. dev.     0.4626  0.0001  0.1878   1.032  0.4539
+
+
+
+Time taken to build model (full training data) : 6.55 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       365 ( 21%)
+1       576 ( 33%)
+3       432 ( 25%)
+4       355 ( 21%)
+
+
+Log likelihood: 10.41474
+

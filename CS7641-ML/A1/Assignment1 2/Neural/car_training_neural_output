@@ -1,0 +1,28 @@
+Tester:     weka.experiment.PairedCorrectedTTester
+Analysing:  Percent_incorrect
+Datasets:   1
+Resultsets: 10
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       9/20/15 1:33 PM
+
+
+Dataset                   (1) meta.Fi | (2) meta (3) meta (4) meta (5) meta (6) meta (7) meta (8) meta (9) meta (10) meta
+-------------------------------------------------------------------------------------------------------------------------
+'carintstring-weka.filter(100)   1.16 |   1.47     1.48     2.17 v   2.88 v   3.45 v   4.16 v   5.38 v   8.09 v   13.73 v
+-------------------------------------------------------------------------------------------------------------------------
+                              (v/ /*) |  (0/1/0)  (0/1/0)  (1/0/0)  (1/0/0)  (1/0/0)  (1/0/0)  (1/0/0)  (1/0/0)   (1/0/0)
+
+
+Key:
+(1) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 0.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(2) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 10.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(3) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 20.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(4) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 30.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(5) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 40.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(6) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 50.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(7) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 60.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(8) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 70.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(9) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 80.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+(10) meta.FilteredClassifier '-F \"unsupervised.instance.RemovePercentage -P 90.0\" -W functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -4523450618538717400
+

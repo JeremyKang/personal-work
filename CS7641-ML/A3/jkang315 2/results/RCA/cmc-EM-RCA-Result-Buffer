@@ -1,0 +1,89 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     cmc-RCA
+Instances:    1473
+Attributes:   10
+              K1
+              K2
+              K3
+              K4
+              K5
+              K6
+              K7
+              K8
+              K9
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 4
+Number of iterations performed: 2
+
+
+              Cluster
+Attribute           0       1       2       3
+                (0.3)  (0.13)  (0.31)  (0.26)
+==============================================
+K1
+  mean         17.1367 17.8657 17.1813 16.2528
+  std. dev.     3.8341  3.1791  4.4751  5.8235
+
+K2
+  mean          4.8128   3.283  5.7251  6.3828
+  std. dev.      1.492  1.4149  1.5228  1.4748
+
+K3
+  mean         -1.7321      -0 -1.6633 -1.6882
+  std. dev.          0       0  0.3381   0.272
+
+K4
+  mean          6.2908  6.3863  5.0206  3.2669
+  std. dev.      0.858  0.9433  1.6746  1.1914
+
+K5
+  mean          3.3647  3.9753   4.771  5.7025
+  std. dev.     1.9318  1.8497  2.2666   2.597
+
+K6
+  mean           4.669  4.7748  5.9573  6.8482
+  std. dev.     3.3597  2.8922   3.631  5.3164
+
+K7
+  mean          9.7347 10.0019  9.8786  9.0725
+  std. dev.     1.4669  1.3896   1.598  1.9672
+
+K8
+  mean        -12.9837-13.1517-10.9264 -7.9646
+  std. dev.     1.2013  1.2333   2.645  2.1406
+
+K9
+  mean         -3.4281 -3.5961 -4.5715 -5.5296
+  std. dev.     3.3121   2.936  3.7255  5.2785
+
+ClassValues
+  mean          0.4601  0.9232       2  0.1438
+  std. dev.     0.4984  0.7741  0.8764  0.3509
+
+
+
+Time taken to build model (full training data) : 6.49 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       865 ( 59%)
+1       215 ( 15%)
+2       149 ( 10%)
+3       244 ( 17%)
+
+
+Log likelihood: -13.46311
+

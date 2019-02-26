@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     cmc-PCA
+Instances:    1473
+Attributes:   9
+              -0.522wife_ed-0.496husband_ed-0.399sol_index+0.359husband_occ+0.326media_expo+0.234wife_religion+0.168num_child+0.066employment-0.002wife_age
+              -0.687wife_age-0.61num_child+0.254husband_occ-0.216sol_index-0.153media_expo+0.124wife_religion+0.059husband_ed+0.048wife_ed-0.01employment
+              -0.806employment-0.466wife_religion+0.205media_expo-0.191num_child+0.158husband_occ-0.136husband_ed+0.077wife_age+0.057sol_index-0.05wife_ed
+              -0.779wife_religion+0.546employment+0.248husband_occ+0.151media_expo-0.073num_child-0.071sol_index+0.022husband_ed-0.004wife_ed-0.001wife_age
+              0.76 media_expo-0.513husband_occ-0.256sol_index-0.198num_child+0.161husband_ed+0.135wife_ed-0.069wife_age+0.061wife_religion+0.045employment
+              0.835sol_index+0.336media_expo-0.237wife_ed-0.234num_child+0.158wife_religion+0.156employment+0.122husband_occ-0.095husband_ed-0.082wife_age
+              0.627husband_occ+0.553husband_ed+0.316media_expo+0.281num_child+0.281wife_ed+0.191wife_religion-0.084employment+0.02 wife_age-0.016sol_index
+              0.641wife_age-0.566num_child+0.328husband_ed-0.308wife_ed-0.154sol_index+0.134wife_religion-0.105media_expo+0.098husband_occ+0.064employment
+              ClassValues
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 507.82506729787457
+
+Initial starting points (random):
+
+Cluster 0: 0.47561,-0.781101,-0.89043,-0.179509,-0.368007,-0.318483,-0.104816,-0.601329,0
+Cluster 1: 2.394609,-0.944688,0.129833,0.080379,2.628071,2.530529,-1.125718,-1.133484,0
+Cluster 2: -0.298023,0.213586,1.222877,-1.419374,-0.439794,0.524726,-0.298121,-0.575452,0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                                                                             Cluster#
+Attribute                                                                                                                                        Full Data          0          1          2
+                                                                                                                                                  (1473.0)   (1025.0)    (106.0)    (342.0)
+===========================================================================================================================================================================================
+-0.522wife_ed-0.496husband_ed-0.399sol_index+0.359husband_occ+0.326media_expo+0.234wife_religion+0.168num_child+0.066employment-0.002wife_age           -0     -0.137     2.9723    -0.5107
+-0.687wife_age-0.61num_child+0.254husband_occ-0.216sol_index-0.153media_expo+0.124wife_religion+0.059husband_ed+0.048wife_ed-0.01employment             -0     0.0587    -0.8949     0.1014
+-0.806employment-0.466wife_religion+0.205media_expo-0.191num_child+0.158husband_occ-0.136husband_ed+0.077wife_age+0.057sol_index-0.05wife_ed             0    -0.5569     0.8051     1.4194
+-0.779wife_religion+0.546employment+0.248husband_occ+0.151media_expo-0.073num_child-0.071sol_index+0.022husband_ed-0.004wife_ed-0.001wife_age            0     0.2496      0.487    -0.8991
+0.76 media_expo-0.513husband_occ-0.256sol_index-0.198num_child+0.161husband_ed+0.135wife_ed-0.069wife_age+0.061wife_religion+0.045employment             0    -0.1554     2.2574    -0.2341
+0.835sol_index+0.336media_expo-0.237wife_ed-0.234num_child+0.158wife_religion+0.156employment+0.122husband_occ-0.095husband_ed-0.082wife_age             0     0.0041     0.7586    -0.2473
+0.627husband_occ+0.553husband_ed+0.316media_expo+0.281num_child+0.281wife_ed+0.191wife_religion-0.084employment+0.02 wife_age-0.016sol_index            -0    -0.0739     0.6405     0.0231
+0.641wife_age-0.566num_child+0.328husband_ed-0.308wife_ed-0.154sol_index+0.134wife_religion-0.105media_expo+0.098husband_occ+0.064employment            -0     0.0194    -0.1176    -0.0217
+ClassValues                                                                                                                                         0.9199     0.9815     0.5094     0.8626
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1025 ( 70%)
+1       106 (  7%)
+2       342 ( 23%)
+
